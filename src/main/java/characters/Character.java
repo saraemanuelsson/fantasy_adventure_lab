@@ -22,4 +22,8 @@ public abstract class Character {
         this.healthPoints -= damageValue;
     }
 
+    public void setHealthPoints(int healthPoints) {
+        this.healthPoints = healthPoints;
+    }
+
 }
