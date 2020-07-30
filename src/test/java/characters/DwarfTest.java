@@ -20,14 +20,14 @@ public class DwarfTest {
 
     @Test
     public void getIweapon() {
-        assertEquals(axe, dwarf.getIweapon());
+        assertEquals(axe, dwarf.getWeapon());
     }
 
     @Test
     public void setIweapon() {
         Club club = new Club();
-        dwarf.setIweapon(club);
-        assertEquals(club, dwarf.getIweapon());
+        dwarf.setWeapon(club);
+        assertEquals(club, dwarf.getWeapon());
     }
 
     @Test

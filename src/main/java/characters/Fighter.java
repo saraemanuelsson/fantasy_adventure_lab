@@ -4,22 +4,22 @@ import tools.IWeapon;
 
 public class Fighter extends Player {
 
-  private IWeapon iweapon;
+  private IWeapon weapon;
 
-  public Fighter(String name, int healthPoints, IWeapon iweapon){
+  public Fighter(String name, int healthPoints, IWeapon weapon){
       super(name, healthPoints);
-      this.iweapon = iweapon;
+      this.weapon = weapon;
   }
 
-    public IWeapon getIweapon() {
-        return iweapon;
+    public IWeapon getWeapon() {
+        return weapon;
     }
 
-    public void setIweapon(IWeapon iweapon) {
-        this.iweapon = iweapon;
+    public void setWeapon(IWeapon iweapon) {
+        this.weapon = iweapon;
     }
 
     public void attackEnemy(Character enemy) {
-      enemy.takeDamage(this.iweapon.attack());
+      enemy.takeDamage(this.weapon.attack());
     }
 }
