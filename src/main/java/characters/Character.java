@@ -18,4 +18,8 @@ public abstract class Character {
         return healthPoints;
     }
 
+    public void takeDamage(int damageValue) {
+        this.healthPoints -= damageValue;
+    }
+
 }
