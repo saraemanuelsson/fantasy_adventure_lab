@@ -1,6 +1,6 @@
 package tools;
 
-public class Club {
+public class Club implements IWeapon{
 
     public int attack() {
         return 40;

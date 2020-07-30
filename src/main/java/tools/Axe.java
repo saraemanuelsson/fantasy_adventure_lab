@@ -1,6 +1,6 @@
 package tools;
 
-public class Axe {
+public class Axe implements IWeapon {
 
     public int attack() {
         return 50;
